@@ -1,0 +1,14 @@
+https_proxy https://127.0.0.1:3128/
+http_proxy http://127.0.0.1:3128/
+ssl_verify_server 1
+use_proxy 1
+follow_locale 1
+system_charset UTF-8
+auto_detect 2
+document_charset UTF-8
+display_charset UTF-8
+cookie_accept_domains 
+cookie_reject_domains 
+accept_bad_cookie 0
+accept_cookie 1
+use_cookie 1
