@@ -1,0 +1,15 @@
+*
+!.zshrc 
+!.gnupg
+!.gnupg/gpg-agent.conf
+!.spacemacs
+!.oh-my-zsh
+!.emacs.d
+!.ssh
+!.ssh/config
+!.w3m 
+!.w3m/config
+!.curlrc
+!.requirements.txt
+!.README.md
+!.gitignore
