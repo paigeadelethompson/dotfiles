@@ -164,7 +164,6 @@ homestead
 httpie
 iwhois
 jake-node
-jenv
 jhbuild
 jira
 jruby
