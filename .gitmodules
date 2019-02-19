@@ -8,5 +8,5 @@
 	path = oh-my-fish
 	url = https://github.com/oh-my-fish/oh-my-fish.git
 [submodule "powerlevel9k"]
-	path = /home/erratic/powerlevel9k
+	path = powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
