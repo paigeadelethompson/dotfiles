@@ -1,20 +1,36 @@
+export COLORTERM=konsole
+#zsh_wifi_signal(){
+#    local signal=$(nmcli device wifi | grep yes | awk '{print $8}')
+#    local color='%F{yellow}'
+#    [[ $signal -gt 75 ]] && color='%F{green}'
+#    [[ $signal -lt 50 ]] && color='%F{red}'
+#    echo -n "%{$color%}\uf230  $signal%{%f%}" # \uf230 is 
+#}
+
+#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_COLOR_SCHEME='light'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(date time context load battery ram vcs root_indicator background_jobs custom_wifi_signal newline dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history status)
+#POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+POWERLEVEL9K_DISABLE_RPROMPT=false
+#POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B1'
+#POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B3'
+#POWERLEVEL9K_VCS_BRANCH_ICON=$'\uF126 '
+POWERLEVEL9K_TIME_FOREGROUND='white'
+POWERLEVEL9K_TIME_BACKGROUND='black'
+#POWERLEVEL9K_VCS_FOREGROUND='021' # Dark blue
+#POWERLEVEL9K_BATTERY_STAGES="▁▂▃▄▅▆▇█"
+
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/erratic/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="jonathan"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -36,7 +52,7 @@ ZSH_THEME="jonathan"
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -171,6 +187,7 @@ jsontools
 jump
 kate
 gpg-agent
+ssh-agent
 kitchen
 knife
 knife_ssh
@@ -337,3 +354,4 @@ PERL5LIB="/home/erratic/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5L
 PERL_LOCAL_LIB_ROOT="/home/erratic/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/erratic/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/erratic/perl5"; export PERL_MM_OPT;
+source  ~/powerlevel9k/powerlevel9k.zsh-theme
