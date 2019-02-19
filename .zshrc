@@ -132,7 +132,6 @@ doctl
 dotenv
 droplr
 eecms
-emacs
 ember-cli
 emoji
 emoji-clock
